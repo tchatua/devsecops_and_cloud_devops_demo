@@ -53,4 +53,10 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
+### 9. Deploy Networking Solution **(Calico) [On MasterNode]**
+
+```sh
+kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+```
+
 
